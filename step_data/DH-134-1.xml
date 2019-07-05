@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config">
+<con:testStep type="calltestcase" name="Run ACP.RTD.REQ [MINMAX]" id="18ed0e2a-d7d9-4f74-bf0a-49df8a139bf8">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>098717a7-7fba-4a5a-b64c-1b8915d8b24e</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>ExternalMessageID*</con:name>
+              <con:value>1262017cfc8940064fb5a1e3a82216f461df</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ExternalMessageType*</con:name>
+              <con:value>F03</con:value>
+            </con:property>
+            <con:property>
+              <con:name>MessageTimestamp*</con:name>
+              <con:value/>
+            </con:property>
+            <con:property>
+              <con:name>PhysicalSender*</con:name>
+              <con:value>${#Project#orgDSO_A}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>JuridicalSender*</con:name>
+              <con:value>${#Project#orgDSO_A}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>JuridicalReceiver*</con:name>
+              <con:value>${#Project#orgMOP_Fingrid}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>PhysicalReceiver*</con:name>
+              <con:value>${#Project#orgMOP_Fingrid}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>BusinessProcess*</con:name>
+              <con:value>DH-134-1</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProcessRole*</con:name>
+              <con:value>DDM</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProductCategory*</con:name>
+              <con:value>23</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Request</con:name>
+              <con:value><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:cms:b2b:v01" xmlns:urn1="urn:fi:Datahub:mif:masterdata:F01_MasterDataCustomerEvent:v1" xmlns:urn2="urn:fi:Datahub:mif:common:HDR_Header:elements:v1" xmlns:urn3="urn:fi:Datahub:mif:common:PEC_ProcessEnergyContext:elements:v1" xmlns:urn4="urn:fi:Datahub:mif:masterdata:F01_MasterDataCustomerEvent:elements:v1" xmlns:urn5="urn:fi:Datahub:mif:query:F02_RequestMPList:v1" xmlns:urn6="urn:fi:Datahub:mif:query:F02_RequestMPList:elements:v1" xmlns:urn7="urn:fi:Datahub:mif:masterdata:E58_MasterDataMPEvent:v1" xmlns:urn8="urn:fi:Datahub:mif:masterdata:E58_MasterDataMPEvent:elements:v1" xmlns:urn9="urn:fi:Datahub:mif:query:F03_RequestMPInfo:v1" xmlns:urn10="urn:fi:Datahub:mif:query:F03_RequestMPInfo:elements:v1" xmlns:urn11="urn:fi:Datahub:mif:masterdata:F04_MasterDataContractEvent:v1" xmlns:urn12="urn:fi:Datahub:mif:masterdata:F04_MasterDataContractEvent:elements:v1" xmlns:urn13="urn:fi:Datahub:mif:masterdata:F06_MasterDataContractEvent:v1" xmlns:urn14="urn:fi:Datahub:mif:masterdata:F06_MasterDataContractEvent:elements:v1" xmlns:urn15="urn:fi:Datahub:mif:masterdata:F18_MasterDataContractEvent:v1" xmlns:urn16="urn:fi:Datahub:mif:masterdata:F18_MasterDataContractEvent:elements:v1" xmlns:urn17="urn:fi:Datahub:mif:masterdata:F09_RequestPowerSwitch:v1" xmlns:urn18="urn:fi:Datahub:mif:masterdata:F09_RequestPowerSwitch:elements:v1" xmlns:urn19="urn:fi:Datahub:mif:metering:F10_RequestSettlementDataInfo:v1" xmlns:urn20="urn:fi:Datahub:mif:metering:F10_RequestSettlementDataInfo:elements:v1" xmlns:urn21="urn:fi:Datahub:mif:masterdata:F11_MasterDataProductEvent:v1" xmlns:urn22="urn:fi:Datahub:mif:masterdata:F11_MasterDataProductEvent:elements:v1" xmlns:urn23="urn:fi:Datahub:mif:masterdata:F12_RequestProductDataInfo:v1" xmlns:urn24="urn:fi:Datahub:mif:masterdata:F12_RequestProductDataInfo:elements:v1" xmlns:urn25="urn:fi:Datahub:mif:invoicing:F14_RequestInvoicingDataInfo:v1" xmlns:urn26="urn:fi:Datahub:mif:invoicing:F14_RequestInvoicingDataInfo:elements:v1" xmlns:urn27="urn:fi:Datahub:mif:masterdata:F15_AuthorizationEvent:v1" xmlns:urn28="urn:fi:Datahub:mif:masterdata:F15_AuthorizationEvent:elements:v1" xmlns:urn29="urn:fi:Datahub:mif:query:F17_PartyInfoRequest:v1" xmlns:urn30="urn:fi:Datahub:mif:query:F17_PartyInfoRequest:elements:v1">
+	<soap:Header/>
+	<soap:Body>
+		<urn:ProcessMessageRequest>
+			<!--Optional:-->
+			<urn:MessageContainer>
+				<urn:Payload>
+					<!--You have a CHOICE of the next 14 items at this level-->
+					<urn9:RequestMPInfoMessage>
+						<urn9:RequestMPInfo>
+							<urn9:Header>
+								<urn2:Identification>1262017cfc8940064fb5a1e3a82216f461df</urn2:Identification>
+										<urn2:DocumentType>F03</urn2:DocumentType>
+										<urn2:Creation>2019-05-01T16:04:26Z</urn2:Creation>
+										<urn2:PhysicalSenderEnergyParty>
+											<urn2:Identification schemeAgencyIdentifier="9">6403020100004</urn2:Identification>
+										</urn2:PhysicalSenderEnergyParty>
+										<urn2:JuridicalSenderEnergyParty>
+											<urn2:Identification schemeAgencyIdentifier="9">6403020100004</urn2:Identification>
+										</urn2:JuridicalSenderEnergyParty>
+										<urn2:JuridicalRecipientEnergyParty>
+											<urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification>
+										</urn2:JuridicalRecipientEnergyParty>
+										<urn2:PhysicalRecipientEnergyParty>
+											<urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification>
+										</urn2:PhysicalRecipientEnergyParty>
+										<!--Optional:-->
+										<urn2:SenderRoutingInformation></urn2:SenderRoutingInformation>
+									</urn9:Header>
+									<urn9:ProcessEnergyContext>
+										<urn3:EnergyBusinessProcess>DH-134-1</urn3:EnergyBusinessProcess>
+										<urn3:EnergyBusinessProcessRole>DDM</urn3:EnergyBusinessProcessRole>
+										<urn3:EnergyIndustryClassification>23</urn3:EnergyIndustryClassification>
+									</urn9:ProcessEnergyContext>
+									<urn9:Transaction>
+										<!--Optional:-->
+										<urn10:StartOfOccurrence>2019-04-30T21:00:00Z</urn10:StartOfOccurrence>
+										<urn10:IdentificationMP schemeAgencyIdentifier="9">640302010487993279</urn10:IdentificationMP>
+									</urn9:Transaction>
+								</urn9:RequestMPInfo>
+							</urn9:RequestMPInfoMessage>
+						</urn:Payload>
+					</urn:MessageContainer>
+				</urn:ProcessMessageRequest>
+			</soap:Body>
+		</soap:Envelope>]]></con:value>
+            </con:property>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value><![CDATA[<soapenv:Envelope xmlns:urn="urn:cms:b2b:v01" xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Header/><soapenv:Body><urn:PeekMessageResponse><urn:MessageContainer><urn:DocumentReferenceNumber>f454ae6f-a821-47dd-b1ab-46e3b7cddae2</urn:DocumentReferenceNumber><urn:Payload><urn17:ResponseMPInfoMessage xmlns:urn17="urn:fi:Datahub:mif:query:F21_ResponseMPInfo:v1" xmlns:urn2="urn:fi:Datahub:mif:common:HDR_Header:elements:v1" xmlns:urn18="urn:fi:Datahub:mif:query:F21_ResponseMPInfo:elements:v1" xmlns:urn3="urn:fi:Datahub:mif:common:PEC_ProcessEnergyContext:elements:v1"><urn17:ResponseMPInfo><urn17:Header><urn2:Identification>f454ae6f-a821-47dd-b1ab-46e3b7cddae2</urn2:Identification><urn2:DocumentType>F21</urn2:DocumentType><urn2:Creation>2019-05-01T14:04:26.581Z</urn2:Creation><urn2:PhysicalSenderEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification></urn2:PhysicalSenderEnergyParty><urn2:JuridicalSenderEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification></urn2:JuridicalSenderEnergyParty><urn2:JuridicalRecipientEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6403020100004</urn2:Identification></urn2:JuridicalRecipientEnergyParty><urn2:PhysicalRecipientEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6403020100004</urn2:Identification></urn2:PhysicalRecipientEnergyParty></urn17:Header><urn17:ProcessEnergyContext><urn3:EnergyBusinessProcess>DH-134-2</urn3:EnergyBusinessProcess><urn3:EnergyBusinessProcessRole>MIA</urn3:EnergyBusinessProcessRole><urn3:EnergyIndustryClassification>23</urn3:EnergyIndustryClassification></urn17:ProcessEnergyContext><urn17:Transaction><urn18:StartOfOccurrence>2019-04-30T21:00:00Z</urn18:StartOfOccurrence><urn18:MeteringPointUsedDomainLocation><urn18:Identification schemeAgencyIdentifier="9">640302010487993279</urn18:Identification><urn18:PhysicalStatusType listAgencyIdentifier="NFI">AE01</urn18:PhysicalStatusType><urn18:MeteringPointType listAgencyIdentifier="NFI">AG02</urn18:MeteringPointType><urn18:MeteringPointSubType listAgencyIdentifier="NFI">AQ01</urn18:MeteringPointSubType><urn18:RemoteConnectable>0</urn18:RemoteConnectable><urn18:MeterIdentification>112345</urn18:MeterIdentification><urn18:MeteringGridAreaUsedDomainLocation><urn18:Identification schemeAgencyIdentifier="305">6403020100000000</urn18:Identification></urn18:MeteringGridAreaUsedDomainLocation><urn18:MeteringPointAddress><urn18:Type listAgencyIdentifier="NFI">AF01</urn18:Type><urn18:StreetName>Streetname</urn18:StreetName><urn18:Postcode>00510</urn18:Postcode><urn18:CityName>Helsinki</urn18:CityName><urn18:CountryCode schemeAgencyIdentifier="5">FI</urn18:CountryCode><urn18:Language schemeAgencyIdentifier="5">fi</urn18:Language></urn18:MeteringPointAddress><urn18:MPDetailMeteringPointCharacteristic><urn18:RemoteReadable>0</urn18:RemoteReadable><urn18:MeteringMethod>E13</urn18:MeteringMethod><urn18:UserGroup>BE01</urn18:UserGroup><urn18:HeatingMethodType>0</urn18:HeatingMethodType><urn18:FuseSize>2x3x63</urn18:FuseSize><urn18:ContractedConnectionCapacity>87.5</urn18:ContractedConnectionCapacity><urn18:ReactiveEnergy>0</urn18:ReactiveEnergy><urn18:EstimatedMetrics><urn18:MeterTimeFrame>E11</urn18:MeterTimeFrame><urn18:Total>50000</urn18:Total></urn18:EstimatedMetrics></urn18:MPDetailMeteringPointCharacteristic></urn18:MeteringPointUsedDomainLocation></urn17:Transaction></urn17:ResponseMPInfo></urn17:ResponseMPInfoMessage></urn:Payload></urn:MessageContainer></urn:PeekMessageResponse></soapenv:Body></soapenv:Envelope>]]></con:value>
+            </con:property>
+            <con:property>
+              <con:name>OrgUser</con:name>
+              <con:value>${#Project#orgUserDSO_A}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>TRP_StartOfOccurence*</con:name>
+              <con:value>${Generate ED (SD)#CalculatedDate}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>TRP_MeteringPointEAN*</con:name>
+              <con:value>${Generate EAN#EAN}</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties>
+            <con:entry>ExternalMessageID*</con:entry>
+            <con:entry>Request</con:entry>
+            <con:entry>Response</con:entry>
+          </con:returnProperties>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Verify ACP.RTD.REQ [MINMAX] Response" id="824b6ad8-dd33-4985-9138-d8d6d94f02f8">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>bb0a78e4-cf1f-4132-92a7-f3da6e4d66c0</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value>${Run ACP.RTD.REQ [MINMAX]#Response}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Count for (Tag/Entity Type/Part of XML)</con:name>
+              <con:value>Part of XML</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Parent Tag of Part of XML (Optional)</con:name>
+              <con:value/>
+            </con:property>
+            <con:property>
+              <con:name>Value for Count</con:name>
+              <con:value>&lt;urn3:EnergyBusinessProcess>DH-134-2&lt;/urn3:EnergyBusinessProcess></con:value>
+            </con:property>
+            <con:property>
+              <con:name>Expecting Count</con:name>
+              <con:value>1</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties/>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+</con:soapui-project>

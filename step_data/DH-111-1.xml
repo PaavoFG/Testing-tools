@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config">
+<con:testStep type="calltestcase" name="Run CUS.UPS [MIN]" id="2e221e5e-1a31-494a-8e37-90e42a709116">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>1e401b55-c6cd-4a2f-8284-cc62f457e0b1</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>ExternalMessageID*</con:name>
+              <con:value>136121509155a9a54181be1585cf5a993784</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ExternalMessageType*</con:name>
+              <con:value>F01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>MessageTimestamp*</con:name>
+              <con:value/>
+            </con:property>
+            <con:property>
+              <con:name>PhysicalSender*</con:name>
+              <con:value>${#Project#orgDDQ_A}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>JuridicalSender*</con:name>
+              <con:value>${#Project#orgDDQ_A}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>JuridicalReceiver*</con:name>
+              <con:value>${#Project#orgMOP_Fingrid}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>PhysicalReceiver*</con:name>
+              <con:value>${#Project#orgMOP_Fingrid}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>BusinessProcess*</con:name>
+              <con:value>DH-111-1</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProcessRole*</con:name>
+              <con:value>DDQ</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProductCategory*</con:name>
+              <con:value>23</con:value>
+            </con:property>
+            <con:property>
+              <con:name>TRP_StartOfOccurrence*</con:name>
+              <con:value>${Generate ED (SD)#CalculatedDate}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>TRP_OriginalMessageID</con:name>
+              <con:value/>
+            </con:property>
+            <con:property>
+              <con:name>TRP_Description</con:name>
+              <con:value>test</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CustomerIdentification*</con:name>
+              <con:value>${Generate CusIdentification#CusIdentification}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CustomerIdentificationType*</con:name>
+              <con:value>AA02</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CustomerType*</con:name>
+              <con:value>AB01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CustomerSubtype</con:name>
+              <con:value>BF01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_PartyOwnCustomerIdentification</con:name>
+              <con:value/>
+            </con:property>
+            <con:property>
+              <con:name>CUS_IsInformationRestricted</con:name>
+              <con:value>0</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_Language</con:name>
+              <con:value>fi</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CompanyName</con:name>
+              <con:value>Oy Datahub Ab</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_GivenName</con:name>
+              <con:value>ESA</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_MiddleNames</con:name>
+              <con:value>Mikko Ylermi</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_FamilyName</con:name>
+              <con:value>Jaatikainen</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_DateOfBirth</con:name>
+              <con:value>1991-01-01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_AdditionalIdentification</con:name>
+              <con:value>abc</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CommunicationChannel1</con:name>
+              <con:value>AD01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CompleteNumber1</con:name>
+              <con:value>1234567890</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CommunicationChannel2</con:name>
+              <con:value>AD02</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CompleteNumber2</con:name>
+              <con:value>test@example.com</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_AddressNote</con:name>
+              <con:value>Oy Datahub Ab</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_StreetName</con:name>
+              <con:value>Syyriankatu</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_BuildingNumber</con:name>
+              <con:value>21</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_StairwellIdentification</con:name>
+              <con:value>A</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_Apartment</con:name>
+              <con:value>13</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_PostalCode</con:name>
+              <con:value>00510</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_POBox</con:name>
+              <con:value>15</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_PostOffice</con:name>
+              <con:value>Helsinki</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_CountryCode</con:name>
+              <con:value>FI</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Request</con:name>
+              <con:value><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:cms:b2b:v01" xmlns:urn1="urn:fi:Datahub:mif:masterdata:F01_MasterDataCustomerEvent:v1" xmlns:urn2="urn:fi:Datahub:mif:common:HDR_Header:elements:v1" xmlns:urn3="urn:fi:Datahub:mif:common:PEC_ProcessEnergyContext:elements:v1" xmlns:urn4="urn:fi:Datahub:mif:masterdata:F01_MasterDataCustomerEvent:elements:v1">
+	<soap:Header/>
+	<soap:Body>
+		<urn:ProcessMessageRequest>
+			<!--Optional:-->
+			<urn:MessageContainer>
+				<urn:Payload>
+					<!--You have a CHOICE of the next 14 items at this level-->
+					<urn1:MasterDataCustomerEventMessage>
+						<urn1:MasterDataCustomerEvent>
+							<urn1:Header>
+								<urn2:Identification>136121509155a9a54181be1585cf5a993784</urn2:Identification>
+								<urn2:DocumentType>F01</urn2:DocumentType>
+								<urn2:Creation>2019-05-02T11:12:19Z</urn2:Creation>
+								<urn2:PhysicalSenderEnergyParty>
+									<urn2:Identification schemeAgencyIdentifier="9">6401010100003</urn2:Identification>
+								</urn2:PhysicalSenderEnergyParty>
+								<urn2:JuridicalSenderEnergyParty>
+									<urn2:Identification schemeAgencyIdentifier="9">6401010100003</urn2:Identification>
+								</urn2:JuridicalSenderEnergyParty>
+								<urn2:JuridicalRecipientEnergyParty>
+									<urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification>
+								</urn2:JuridicalRecipientEnergyParty>
+								<urn2:PhysicalRecipientEnergyParty>
+									<urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification>
+								</urn2:PhysicalRecipientEnergyParty>
+							</urn1:Header>
+							<urn1:ProcessEnergyContext>
+								<urn3:EnergyBusinessProcess>DH-111-1</urn3:EnergyBusinessProcess>
+								<urn3:EnergyBusinessProcessRole>DDQ</urn3:EnergyBusinessProcessRole>
+								<urn3:EnergyIndustryClassification>23</urn3:EnergyIndustryClassification>
+							</urn1:ProcessEnergyContext>
+							<urn1:Transaction>
+								<urn4:StartOfOccurrence>2019-05-01T21:00:00Z</urn4:StartOfOccurrence>
+								<urn4:ConsumerInvolvedCustomerParty>
+									<urn4:Identification schemeAgencyIdentifier="260">35116615</urn4:Identification>
+									<urn4:IdentificationType listAgencyIdentifier="NFI">AA02</urn4:IdentificationType>
+									<urn4:CustomerType listAgencyIdentifier="NFI">AB01</urn4:CustomerType>
+									<!--Optional:-->
+									<urn4:CustomerSubType listAgencyIdentifier="NFI">BF01</urn4:CustomerSubType>
+									<!--Optional:-->
+									<urn4:InformationRestriction>0</urn4:InformationRestriction>
+									<!--Optional:-->
+									<urn4:Language schemeAgencyIdentifier="5">fi</urn4:Language>
+									<!--Optional:-->
+									<urn4:Name>Oy Datahub Ab</urn4:Name>
+								</urn4:ConsumerInvolvedCustomerParty>
+							</urn1:Transaction>
+						</urn1:MasterDataCustomerEvent>
+					</urn1:MasterDataCustomerEventMessage>
+				</urn:Payload>
+			</urn:MessageContainer>
+		</urn:ProcessMessageRequest>
+	</soap:Body>
+</soap:Envelope>]]></con:value>
+            </con:property>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value><![CDATA[<soapenv:Envelope xmlns:urn="urn:cms:b2b:v01" xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Header/><soapenv:Body><urn:PeekMessageResponse><urn:MessageContainer><urn:DocumentReferenceNumber>db0e5cb7-f298-4c68-97d5-b706b30f2c85</urn:DocumentReferenceNumber><urn:Payload><urn13:AcknowledgementMessage xmlns:urn13="urn:fi:Datahub:mif:common:ACK_Acknowledgement:v1" xmlns:urn14="urn:fi:Datahub:mif:common:ACK_Acknowledgement:elements:v1" xmlns:urn2="urn:fi:Datahub:mif:common:HDR_Header:elements:v1" xmlns:urn3="urn:fi:Datahub:mif:common:PEC_ProcessEnergyContext:elements:v1"><urn13:Acknowledgement><urn13:Header><urn2:Identification>db0e5cb7-f298-4c68-97d5-b706b30f2c85</urn2:Identification><urn2:DocumentType>ACK</urn2:DocumentType><urn2:Creation>2019-05-02T09:12:20.173Z</urn2:Creation><urn2:PhysicalSenderEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification></urn2:PhysicalSenderEnergyParty><urn2:JuridicalSenderEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification></urn2:JuridicalSenderEnergyParty><urn2:JuridicalRecipientEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6401010100003</urn2:Identification></urn2:JuridicalRecipientEnergyParty><urn2:PhysicalRecipientEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6401010100003</urn2:Identification></urn2:PhysicalRecipientEnergyParty></urn13:Header><urn13:ProcessEnergyContext><urn3:EnergyBusinessProcess>DH-111-1</urn3:EnergyBusinessProcess><urn3:EnergyBusinessProcessRole>MIA</urn3:EnergyBusinessProcessRole><urn3:EnergyIndustryClassification>23</urn3:EnergyIndustryClassification></urn13:ProcessEnergyContext><urn13:Transaction><urn14:StartOfOccurrence>2019-05-02T09:12:20.016Z</urn14:StartOfOccurrence><urn14:OriginalBusinessDocumentReference>136121509155a9a54181be1585cf5a993784</urn14:OriginalBusinessDocumentReference><urn14:OriginalBusinessDocumentSender schemeAgencyIdentifier="9">6401010100003</urn14:OriginalBusinessDocumentSender><urn14:ReasonCode listAgencyIdentifier="NFI">BA01</urn14:ReasonCode></urn13:Transaction></urn13:Acknowledgement></urn13:AcknowledgementMessage></urn:Payload></urn:MessageContainer></urn:PeekMessageResponse></soapenv:Body></soapenv:Envelope>]]></con:value>
+            </con:property>
+            <con:property>
+              <con:name>OrgUser</con:name>
+              <con:value>${#Project#orgUserDDQ_A}</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties>
+            <con:entry>ExternalMessageID*</con:entry>
+            <con:entry>Request</con:entry>
+            <con:entry>Response</con:entry>
+          </con:returnProperties>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Verify CUS.UPS [MIN] Response" id="76b43057-2614-466f-aca1-901460ab7630">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>bb0a78e4-cf1f-4132-92a7-f3da6e4d66c0</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value>${Run CUS.UPS [MIN]#Response}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Count for (Tag/Entity Type/Part of XML)</con:name>
+              <con:value>Part of XML</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Parent Tag of Part of XML (Optional)</con:name>
+              <con:value/>
+            </con:property>
+            <con:property>
+              <con:name>Value for Count</con:name>
+              <con:value>BA01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Expecting Count</con:name>
+              <con:value>1</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties/>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+</con:soapui-project>

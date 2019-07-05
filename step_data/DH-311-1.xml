@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config">
+      <con:testStep type="calltestcase" name="Generate ED (SD)" id="3440a0df-2e22-42f8-8d77-77333935b281">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>ee3e3901-9e53-4c13-9af7-63d5abfce72e</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>Offset</con:name>
+              <con:value>0</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CalendarUsage(Optional)</con:name>
+            </con:property>
+            <con:property>
+              <con:name>CalculatedDate</con:name>
+              <con:value>2019-06-09T21:00:00Z</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CD/WD</con:name>
+              <con:value>CD</con:value>
+            </con:property>
+            <con:property>
+              <con:name>TimeZone</con:name>
+              <con:value>UTC</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Format</con:name>
+              <con:value>SDStart</con:value>
+            </con:property>
+            <con:property>
+              <con:name>StartDate(Optional)</con:name>
+            </con:property>
+          </con:properties>
+          <con:returnProperties>
+            <con:entry>CalculatedDate</con:entry>
+          </con:returnProperties>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Generate ProductCode" id="647486ff-3ba1-49a8-bf3e-d168aa42fa53">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>bbedf410-023b-411c-934f-8630f342c292</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>OrgID</con:name>
+              <con:value>${Run AGR.CRE.SLS [MIN]#PhysicalSender*}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProductCode1</con:name>
+              <con:value>6429020101</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProductCode2</con:name>
+              <con:value>6429020102</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProductCode3</con:name>
+              <con:value>6429020103</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties>
+            <con:entry>ProductCode1</con:entry>
+            <con:entry>ProductCode2</con:entry>
+            <con:entry>ProductCode3</con:entry>
+          </con:returnProperties>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Generate ContractID" id="adefb88f-1fe1-4fb7-9089-473b96247b19">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>5aa87145-ae2e-4d9e-9708-b35d24094659</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>NoofDigits</con:name>
+              <con:value>10</con:value>
+            </con:property>
+            <con:property>
+              <con:name>StartWith</con:name>
+              <con:value>25</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ContractID</con:name>
+              <con:value>2585687584</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties>
+            <con:entry>ContractID</con:entry>
+          </con:returnProperties>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Generate CusIdentification" id="1099bc76-d57d-4bed-a478-92fe258cc9b3">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>d2560ccd-2879-470f-94be-8c77c0185b78</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>StartWith</con:name>
+              <con:value>35</con:value>
+            </con:property>
+            <con:property>
+              <con:name>NoofDigits</con:name>
+              <con:value>8</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CusIdentification</con:name>
+              <con:value>35433323</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties>
+            <con:entry>CusIdentification</con:entry>
+          </con:returnProperties>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Run AGR.CRE.SLS [MIN]" id="9278daec-711c-4f90-8a3b-a7f4b883bfed">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>283848b6-3a4c-4fb1-9d53-dbbfc522e786</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>ExternalMessageID*</con:name>
+              <con:value>121341f1ee5b902b4366b7cc4ad59bae3102</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ExternalMessageType*</con:name>
+              <con:value>F04</con:value>
+            </con:property>
+            <con:property>
+              <con:name>MessageTimestamp*</con:name>
+              <con:value/>
+            </con:property>
+            <con:property>
+              <con:name>PhysicalSender*</con:name>
+              <con:value>${#Project#orgDDQ_A}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>JuridicalSender*</con:name>
+              <con:value>${#Project#orgDDQ_A}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>JuridicalReceiver*</con:name>
+              <con:value>${#Project#orgMOP_Fingrid}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>PhysicalReceiver*</con:name>
+              <con:value>${#Project#orgMOP_Fingrid}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>BusinessProcess*</con:name>
+              <con:value>DH-311-1</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProcessRole*</con:name>
+              <con:value>DDQ</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProductCategory*</con:name>
+              <con:value>23</con:value>
+            </con:property>
+            <con:property>
+              <con:name>TRP_StartOfOccurrence</con:name>
+              <con:value>${Generate ED (SD)#CalculatedDate}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGR_AgreementType*</con:name>
+              <con:value>12</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGR_OrganisationIdentifier*</con:name>
+              <con:value>${#Project#orgDDQ_A}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGR_ExternalContractID*</con:name>
+              <con:value>${Generate ContractID#ContractID}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGD_ContactMethod*</con:name>
+              <con:value>AC01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGD_InvoicingChannel*</con:name>
+              <con:value>AI02</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGD_InvoicingMethod*</con:name>
+              <con:value>AH01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGD_IsDeliveryContract*</con:name>
+              <con:value>0</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGD_IsInterruptionCritical*</con:name>
+              <con:value>1</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGD_IsFixedTermSalesAgreement*</con:name>
+              <con:value>0</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGD_IsSpecialTerminationContract*</con:name>
+              <con:value>0</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGD_TaxCategory*</con:name>
+              <con:value>0</con:value>
+            </con:property>
+            <con:property>
+              <con:name>AGR_ContractStartDate*</con:name>
+              <con:value>2018-11-21T14:55:56Z</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_MeteringPointEAN*</con:name>
+              <con:value>${Generate EAN#EAN}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_MeteringGridArea*</con:name>
+              <con:value>${Generate MeteringGridArea#MeteringGridArea1}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CustomerIdentification1*</con:name>
+              <con:value>${Generate CusIdentification#CusIdentification}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CustomerType1*</con:name>
+              <con:value>AB01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CustomerSubType1*</con:name>
+              <con:value>BF01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CustomerIdentificationType1*</con:name>
+              <con:value>AA02</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_Language1*</con:name>
+              <con:value>fi</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_IsInformationRestricted1*</con:name>
+              <con:value>0</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_PostalCode1*</con:name>
+              <con:value>00510</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_PostOffice1*</con:name>
+              <con:value>Helsinki</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_Country1*</con:name>
+              <con:value>FI</con:value>
+            </con:property>
+            <con:property>
+              <con:name>EIA_BuyerReference</con:name>
+              <con:value>50012345</con:value>
+            </con:property>
+            <con:property>
+              <con:name>EIA_ElectronicInvoicingAddress</con:name>
+              <con:value>NL61INGB</con:value>
+            </con:property>
+            <con:property>
+              <con:name>EIA_OperatorIdentification</con:name>
+              <con:value>BankID</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CompanyName1</con:name>
+              <con:value>Bedrijf1</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_CommunicationChannel1</con:name>
+              <con:value>AD02</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CUS_EmailAddress1</con:name>
+              <con:value>tester1@example.com</con:value>
+            </con:property>
+            <con:property>
+              <con:name>CPA_POBox1</con:name>
+              <con:value>101</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Request</con:name>
+              <con:value><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:cms:b2b:v01" xmlns:urn2="urn:fi:Datahub:mif:common:HDR_Header:elements:v1" xmlns:urn3="urn:fi:Datahub:mif:common:PEC_ProcessEnergyContext:elements:v1" xmlns:urn11="urn:fi:Datahub:mif:masterdata:F04_MasterDataContractEvent:v1" xmlns:urn12="urn:fi:Datahub:mif:masterdata:F04_MasterDataContractEvent:elements:v1" >
+   <soap:Header/>
+   <soap:Body>
+      <urn:ProcessMessageRequest>
+         <!--Optional:-->
+         <urn:MessageContainer>
+            <urn:Payload>
+               <!--You have a CHOICE of the next 14 items at this level-->
+               <urn11:MasterDataContractEventMessage>
+                  <urn11:MasterDataContractEvent>
+                     <urn11:Header>
+                        <urn2:Identification>121341f1ee5b902b4366b7cc4ad59bae3102</urn2:Identification>
+                        <urn2:DocumentType>F04</urn2:DocumentType>
+                        <urn2:Creation>2019-06-10T13:46:29Z</urn2:Creation>
+                        <urn2:PhysicalSenderEnergyParty>
+                           <urn2:Identification schemeAgencyIdentifier="9">6429010100007</urn2:Identification>
+                        </urn2:PhysicalSenderEnergyParty>
+                        <urn2:JuridicalSenderEnergyParty>
+                           <urn2:Identification schemeAgencyIdentifier="9">6429010100007</urn2:Identification>
+                        </urn2:JuridicalSenderEnergyParty>
+                        <urn2:JuridicalRecipientEnergyParty>
+                           <urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification>
+                        </urn2:JuridicalRecipientEnergyParty>
+                        <urn2:PhysicalRecipientEnergyParty>
+                           <urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification>
+                        </urn2:PhysicalRecipientEnergyParty>
+                     </urn11:Header>
+                     <urn11:ProcessEnergyContext>
+                        <urn3:EnergyBusinessProcess>DH-311-1</urn3:EnergyBusinessProcess>
+                        <urn3:EnergyBusinessProcessRole>DDQ</urn3:EnergyBusinessProcessRole>
+                        <urn3:EnergyIndustryClassification>23</urn3:EnergyIndustryClassification>
+                     </urn11:ProcessEnergyContext>
+                     <urn11:Transaction>
+                        <!--Optional:-->
+                        <urn12:StartOfOccurrence>2019-06-09T21:00:00Z</urn12:StartOfOccurrence>
+                        <!--Optional:-->
+                        <urn12:MasterDataContract>
+                           <urn12:ContactType listAgencyIdentifier="NFI">AC01</urn12:ContactType>
+                           <urn12:Identification>2585687584</urn12:Identification>
+                           <urn12:ContractType>12</urn12:ContractType>
+                           <urn12:DeliveryContract>0</urn12:DeliveryContract>
+						   <urn12:ContractStart>2018-11-21T14:55:56Z</urn12:ContractStart>
+                           <urn12:TimeLimited>0</urn12:TimeLimited>
+                           <urn12:InvoicingMethod listAgencyIdentifier="NFI">AH01</urn12:InvoicingMethod>
+                           <urn12:NoticeBasis>0</urn12:NoticeBasis>
+                           <urn12:Priority>1</urn12:Priority>	
+                           <urn12:InvoicingChannel listAgencyIdentifier="NFI">AI02</urn12:InvoicingChannel>						   
+                           <urn12:ElectronicInvoiceAddressDetails>
+                              <!--Optional:-->
+                              <urn12:ElectronicInvoiceTargetId>50012345</urn12:ElectronicInvoiceTargetId>
+                              <urn12:ElectronicInvoiceAddress>NL61INGB</urn12:ElectronicInvoiceAddress>
+                              <urn12:ElectronicInvoiceRouter>BankID</urn12:ElectronicInvoiceRouter>
+                           </urn12:ElectronicInvoiceAddressDetails>
+                           <urn12:MeteringPointOfContract>
+                              <urn12:Identification schemeAgencyIdentifier="9">642902010450142084</urn12:Identification>
+                           </urn12:MeteringPointOfContract>
+                           <urn12:MeteringGridAreaUsedDomainLocation>
+                              <urn12:Identification schemeAgencyIdentifier="305">6429020100000000</urn12:Identification>
+                           </urn12:MeteringGridAreaUsedDomainLocation>
+                           <!--Optional:-->
+                           <urn12:SupplierOfContract>
+                              <urn12:Identification schemeAgencyIdentifier="9">6429010100007</urn12:Identification>
+                           </urn12:SupplierOfContract>
+                           <urn12:ConsumerInvolvedCustomerParty>
+                              <urn12:Identification schemeAgencyIdentifier="260">35433323</urn12:Identification>
+                              <urn12:IdentificationType listAgencyIdentifier="NFI">AA02</urn12:IdentificationType>
+                              <urn12:CustomerType listAgencyIdentifier="NFI">AB01</urn12:CustomerType>
+                              <urn12:CustomerSubType listAgencyIdentifier="NFI">BF01</urn12:CustomerSubType>
+                              <urn12:InformationRestriction>0</urn12:InformationRestriction>
+                              <urn12:Language schemeAgencyIdentifier="5">fi</urn12:Language>			  
+                              <!--Optional:-->
+                              <urn12:Name>Bedrijf1</urn12:Name>
+                              <urn12:CustomerCommunication>
+                                 <urn12:CommunicationChannel listAgencyIdentifier="NFI">AD02</urn12:CommunicationChannel>
+                                 <urn12:CompleteNumber>tester1@example.com</urn12:CompleteNumber>
+                              </urn12:CustomerCommunication>
+                              <urn12:ConsumerInvolvedCustomerAddress>
+                                 <urn12:Postcode>00510</urn12:Postcode>
+                                 <!--Optional:-->
+                                 <urn12:Pobox>101</urn12:Pobox>
+                                 <urn12:CityName>Helsinki</urn12:CityName>
+                                 <urn12:CountryCode schemeAgencyIdentifier="5">FI</urn12:CountryCode>
+                              </urn12:ConsumerInvolvedCustomerAddress>
+                           </urn12:ConsumerInvolvedCustomerParty>
+                        </urn12:MasterDataContract>
+                     </urn11:Transaction>
+                  </urn11:MasterDataContractEvent>
+               </urn11:MasterDataContractEventMessage>
+            </urn:Payload>
+         </urn:MessageContainer>
+      </urn:ProcessMessageRequest>
+   </soap:Body>
+</soap:Envelope>]]></con:value>
+            </con:property>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:cms:b2b:v01"><SOAP-ENV:Header/><SOAP-ENV:Body><SOAP-ENV:Fault><SOAP-ENV:Code><SOAP-ENV:Value>SOAP-ENV:Receiver</SOAP-ENV:Value></SOAP-ENV:Code><SOAP-ENV:Reason><SOAP-ENV:Text xml:lang="en">Back-end timeout</SOAP-ENV:Text></SOAP-ENV:Reason><SOAP-ENV:Detail><urn:CMSFault><urn:ErrorCode>MHB.MHD.005</urn:ErrorCode><urn:ErrorIdentification>1560163635499</urn:ErrorIdentification></urn:CMSFault></SOAP-ENV:Detail></SOAP-ENV:Fault></SOAP-ENV:Body></SOAP-ENV:Envelope>]]></con:value>
+            </con:property>
+            <con:property>
+              <con:name>OrgUser</con:name>
+              <con:value>${#Project#orgUserDDQ_A}</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties>
+            <con:entry>ExternalMessageID*</con:entry>
+            <con:entry>Request</con:entry>
+            <con:entry>Response</con:entry>
+          </con:returnProperties>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Verify AGR.CRE.SLS [MIN] Response" id="6d085f58-6d65-4313-ab71-e852e460b7fb">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>bb0a78e4-cf1f-4132-92a7-f3da6e4d66c0</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value>${Run AGR.CRE.SLS [MIN]#Response}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Count for (Tag/Entity Type/Part of XML)</con:name>
+              <con:value>Part of XML</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Parent Tag of Part of XML (Optional)</con:name>
+              <con:value/>
+            </con:property>
+            <con:property>
+              <con:name>Value for Count</con:name>
+              <con:value>BA01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Expecting Count</con:name>
+              <con:value>1</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties/>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+</con:soapui-project>
