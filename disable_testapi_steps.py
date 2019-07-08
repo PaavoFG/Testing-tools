@@ -11,7 +11,7 @@ project_data = ET.parse(project_file_path).getroot()
 
 # Give options to user
 options = ["disable", "enable"]
-option = cf.get_element_index("option", options)
+option = cf.get_option_index("option", options)
 
 
 # Run the selected option for all test steps in the project

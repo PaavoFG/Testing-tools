@@ -11,12 +11,12 @@ project_data = ET.parse(project_file_path).getroot()
 
 # Select target suite
 project_suites = project_data.findall('.//{http://eviware.com/soapui/config}testSuite')
-i_suite = get_element_index("suite", project_suites)
+i_suite = get_option_index("suite", project_suites)
 
 
 # Select target test case
 project_test_cases = project_suites[i_suite].findall('.//{http://eviware.com/soapui/config}testCase')
-i_case = get_element_index("case", project_test_cases)
+i_case = get_option_index("case", project_test_cases)
 target_case = project_test_cases[i_case]
 
 

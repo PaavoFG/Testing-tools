@@ -4,8 +4,8 @@ import xml.etree.ElementTree as ET
 
 
 templates = {
-            "Update customer information":"./xml_editors/step_data/DH-111-1.xml",
-            "Create ACP [MIN]":"./xml_editors/step_data/DH-121.xml",
+            "Update customer information [DH-111-1]":"./xml_editors/step_data/DH-111-1.xml",
+            "Create ACP [MIN] [DH-121]":"./xml_editors/step_data/DH-121.xml",
             "Requesting ACP information":"./xml_editors/step_data/DH-131-1.xml",
             "Current supplier requests customer information":"./xml_editors/step_data/DH-132-1.xml",
             "DSO requests customer information":"./xml_editors/step_data/DH-134-1.xml",
@@ -30,7 +30,7 @@ def input_file_path():
             print("\nCouldn't find the given file. Please give a new file path.")
 
 
-def get_element_index(element_type, list_of_elements):
+def get_option_index(element_type, list_of_elements):
     last_index = get_options(element_type, list_of_elements)
     while True:
 
@@ -49,6 +49,7 @@ def get_element_index(element_type, list_of_elements):
         else:
             break
     return user_input
+    
 
 def get_options(element_type, list_of_elements):
     index = 0
