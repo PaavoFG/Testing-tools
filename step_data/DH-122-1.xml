@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config">
+    <con:testStep type="calltestcase" name="Run ACP.UPD.REQ [MIN]" id="84afb710-6497-4c24-9096-a34f9dc08e61">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>6913d679-5c6e-4c6a-9436-fde5561c8644</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>ExternalMessageID*</con:name>
+              <con:value>1123711d36a424ae4e17a0a146769f5cf7a7</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ExternalMessageType*</con:name>
+              <con:value>E58</con:value>
+            </con:property>
+            <con:property>
+              <con:name>MessageTimestamp*</con:name>
+              <con:value/>
+            </con:property>
+            <con:property>
+              <con:name>PhysicalSender*</con:name>
+              <con:value>${#Project#orgDSO_A}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>JuridicalSender*</con:name>
+              <con:value>${#Project#orgDSO_A}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>JuridicalReceiver*</con:name>
+              <con:value>${#Project#orgMOP_Fingrid}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>PhysicalReceiver*</con:name>
+              <con:value>${#Project#orgMOP_Fingrid}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>BusinessProcess*</con:name>
+              <con:value>DH-122-1</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProcessRole*</con:name>
+              <con:value>DDZ</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ProductCategory*</con:name>
+              <con:value>23</con:value>
+            </con:property>
+            <con:property>
+              <con:name>TRP_StartOfOccurrence*</con:name>
+              <con:value>${Generate ED (SD)#CalculatedDate}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_MeteringPointEAN*</con:name>
+              <con:value>${Generate EAN#EAN}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_MeteringPointStatus*</con:name>
+              <con:value>AE01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_AccountingPointType*</con:name>
+              <con:value>AG02</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_AccountingPointSubtype*</con:name>
+              <con:value>AQ01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_IsRemotelyConnectable*</con:name>
+              <con:value>1</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_MeteringGridArea*</con:name>
+              <con:value>${Generate MeteringGridArea#MeteringGridArea1}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_MeterNumber</con:name>
+              <con:value>112345</con:value>
+            </con:property>
+            <con:property>
+              <con:name>MPA_AddressType1*</con:name>
+              <con:value>AF01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>MPA_Language1*</con:name>
+              <con:value>fi</con:value>
+            </con:property>
+            <con:property>
+              <con:name>MPA_StreetName1*</con:name>
+              <con:value>Streetname Update</con:value>
+            </con:property>
+            <con:property>
+              <con:name>MPA_PostalCode1*</con:name>
+              <con:value>00511</con:value>
+            </con:property>
+            <con:property>
+              <con:name>MPA_PostOffice1*</con:name>
+              <con:value>Helsinki</con:value>
+            </con:property>
+            <con:property>
+              <con:name>MPA_Country1*</con:name>
+              <con:value>FI</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_IsRemotelyReadable*</con:name>
+              <con:value>0</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_MeteringMethod</con:name>
+              <con:value>E13</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_UserGroup</con:name>
+              <con:value>BE01</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_IsHeatingDependentOnElectricity*</con:name>
+              <con:value>0</con:value>
+            </con:property>
+            <con:property>
+              <con:name>ACP_FuseSize</con:name>
+              <con:value>2x3x63</con:value>
+            </con:property>
+            <con:property>
+              <con:name>EYU_MeterTimeFrame1</con:name>
+              <con:value>E10</con:value>
+            </con:property>
+            <con:property>
+              <con:name>EYU_EstimatedYearlyUsage1</con:name>
+              <con:value>11111</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Request</con:name>
+              <con:value><![CDATA[<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:cms:b2b:v01" xmlns:urn2="urn:fi:Datahub:mif:common:HDR_Header:elements:v1" xmlns:urn3="urn:fi:Datahub:mif:common:PEC_ProcessEnergyContext:elements:v1" xmlns:urn7="urn:fi:Datahub:mif:masterdata:E58_MasterDataMPEvent:v1" xmlns:urn8="urn:fi:Datahub:mif:masterdata:E58_MasterDataMPEvent:elements:v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:ProcessMessageRequest>
+         <!--Optional:-->
+         <urn:MessageContainer>
+            <urn:Payload>
+               <!--You have a CHOICE of the next 14 items at this level-->
+               <urn7:MasterDataMPEventMessage>
+                  <urn7:MasterDataMPEvent>
+                     <urn7:Header>
+                        <urn2:Identification>1123711d36a424ae4e17a0a146769f5cf7a7</urn2:Identification>
+                        <urn2:DocumentType>E58</urn2:DocumentType>
+                        <urn2:Creation>2019-02-21T16:14:37Z</urn2:Creation>
+                        <urn2:PhysicalSenderEnergyParty>
+                           <urn2:Identification schemeAgencyIdentifier="9">6401020100000</urn2:Identification>
+                        </urn2:PhysicalSenderEnergyParty>
+                        <urn2:JuridicalSenderEnergyParty>
+                           <urn2:Identification schemeAgencyIdentifier="9">6401020100000</urn2:Identification>
+                        </urn2:JuridicalSenderEnergyParty>
+                        <urn2:JuridicalRecipientEnergyParty>
+                           <urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification>
+                        </urn2:JuridicalRecipientEnergyParty>
+                        <urn2:PhysicalRecipientEnergyParty>
+                           <urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification>
+                        </urn2:PhysicalRecipientEnergyParty>
+                     </urn7:Header>
+                     <urn7:ProcessEnergyContext>
+                        <urn3:EnergyBusinessProcess>DH-122-1</urn3:EnergyBusinessProcess>
+                        <urn3:EnergyBusinessProcessRole>DDZ</urn3:EnergyBusinessProcessRole>
+                        <urn3:EnergyIndustryClassification>23</urn3:EnergyIndustryClassification>
+                     </urn7:ProcessEnergyContext>
+                     <urn7:Transaction>
+                        <urn8:StartOfOccurrence>2019-02-20T22:00:00Z</urn8:StartOfOccurrence>
+                        <urn8:MeteringPointUsedDomainLocation>
+                           <urn8:Identification schemeAgencyIdentifier="9">640102010848711995</urn8:Identification>
+                           <!--Optional:-->
+                           <urn8:PhysicalStatusType listAgencyIdentifier="NFI">AE01</urn8:PhysicalStatusType>
+                           <!--Optional:-->
+                           <urn8:MeteringPointType listAgencyIdentifier="NFI">AG02</urn8:MeteringPointType>
+                           <!--Optional:-->
+                           <urn8:MeteringPointSubType listAgencyIdentifier="NFI">AQ01</urn8:MeteringPointSubType>
+                           <!--Optional:-->
+                           <urn8:RemoteConnectable>1</urn8:RemoteConnectable>
+                           <!--Optional:-->
+                           <urn8:MeterIdentification>112345</urn8:MeterIdentification>
+                           <urn8:MeteringGridAreaUsedDomainLocation>
+                              <urn8:Identification schemeAgencyIdentifier="305">6401020100000000</urn8:Identification>
+                           </urn8:MeteringGridAreaUsedDomainLocation>
+                           <urn8:MeteringPointAddress>
+                              <urn8:Type listAgencyIdentifier="NFI">AF01</urn8:Type>
+                              <!--Optional:-->
+                              <urn8:StreetName>Streetname Update</urn8:StreetName>
+                              <!--Optional:-->
+                              <!--urn8:BuildingNumber></urn8:BuildingNumber-->
+                              <!--Optional:-->
+                              <!--urn8:FloorIdentification></urn8:FloorIdentification-->
+                              <!--Optional:-->
+                              <!--urn8:RoomIdentification></urn8:RoomIdentification-->
+                              <!--Optional:-->
+                              <urn8:Postcode>00511</urn8:Postcode>
+                              <!--Optional:-->
+                              <urn8:CityName>Helsinki</urn8:CityName>
+                              <!--Optional:-->
+                              <urn8:CountryCode schemeAgencyIdentifier="5">FI</urn8:CountryCode>
+                              <!--Optional:-->
+                              <!--urn8:AddressFreeForm></urn8:AddressFreeForm-->
+                              <!--Optional:-->
+                              <urn8:Language schemeAgencyIdentifier="5">fi</urn8:Language>
+                           </urn8:MeteringPointAddress>
+                           <urn8:MPDetailMeteringPointCharacteristic>
+                              <!--Optional:-->
+                              <urn8:RemoteReadable>0</urn8:RemoteReadable>
+                              <!--Optional:-->
+                              <urn8:MeteringMethod>E13</urn8:MeteringMethod>
+                              <!--Optional:-->
+                              <urn8:UserGroup>BE01</urn8:UserGroup>
+                              <!--Optional:-->
+                              <urn8:HeatingMethodType>0</urn8:HeatingMethodType>
+                              <!--Optional:-->
+                              <urn8:FuseSize>2x3x63</urn8:FuseSize>
+                              <!--0 to 2 repetitions:-->
+                              <urn8:EstimatedMetrics>
+                                 <urn8:MeterTimeFrame>E10</urn8:MeterTimeFrame>
+                                 <urn8:Total>11111</urn8:Total>
+                              </urn8:EstimatedMetrics>
+                           </urn8:MPDetailMeteringPointCharacteristic>
+                        </urn8:MeteringPointUsedDomainLocation>
+                     </urn7:Transaction>
+                  </urn7:MasterDataMPEvent>
+               </urn7:MasterDataMPEventMessage>
+            </urn:Payload>
+         </urn:MessageContainer>
+      </urn:ProcessMessageRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:value>
+            </con:property>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value><![CDATA[<soapenv:Envelope xmlns:urn="urn:cms:b2b:v01" xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Header/><soapenv:Body><urn:ProcessMessageResponse><urn:MessageContainer><urn:DocumentReferenceNumber>dcc82bdf-b673-4244-952d-52e3585344a8</urn:DocumentReferenceNumber><urn:Payload><urn13:AcknowledgementMessage xmlns:urn13="urn:fi:Datahub:mif:common:ACK_Acknowledgement:v1" xmlns:urn14="urn:fi:Datahub:mif:common:ACK_Acknowledgement:elements:v1" xmlns:urn2="urn:fi:Datahub:mif:common:HDR_Header:elements:v1" xmlns:urn3="urn:fi:Datahub:mif:common:PEC_ProcessEnergyContext:elements:v1"><urn13:Acknowledgement><urn13:Header><urn2:Identification>dcc82bdf-b673-4244-952d-52e3585344a8</urn2:Identification><urn2:DocumentType>ACK</urn2:DocumentType><urn2:Creation>2019-02-21T15:14:38.136Z</urn2:Creation><urn2:PhysicalSenderEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification></urn2:PhysicalSenderEnergyParty><urn2:JuridicalSenderEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6410000000001</urn2:Identification></urn2:JuridicalSenderEnergyParty><urn2:JuridicalRecipientEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6401020100000</urn2:Identification></urn2:JuridicalRecipientEnergyParty><urn2:PhysicalRecipientEnergyParty><urn2:Identification schemeAgencyIdentifier="9">6401020100000</urn2:Identification></urn2:PhysicalRecipientEnergyParty></urn13:Header><urn13:ProcessEnergyContext><urn3:EnergyBusinessProcess>DH-122-1</urn3:EnergyBusinessProcess><urn3:EnergyBusinessProcessRole>MIA</urn3:EnergyBusinessProcessRole><urn3:EnergyIndustryClassification>23</urn3:EnergyIndustryClassification></urn13:ProcessEnergyContext><urn13:Transaction><urn14:StartOfOccurrence>2019-02-21T15:14:38.058Z</urn14:StartOfOccurrence><urn14:OriginalBusinessDocumentReference>1123711d36a424ae4e17a0a146769f5cf7a7</urn14:OriginalBusinessDocumentReference><urn14:OriginalBusinessDocumentSender schemeAgencyIdentifier="9">6401020100000</urn14:OriginalBusinessDocumentSender><urn14:ReasonCode listAgencyIdentifier="NFI">BA02</urn14:ReasonCode><urn14:EventReason><urn14:EventReasonCode>RC.EYU.103</urn14:EventReasonCode><urn14:EventReasonText>nog in te vullen</urn14:EventReasonText><urn14:EventDetails>Estimated Yearly Usage 1</urn14:EventDetails><urn14:EventDetails>Estimated Yearly Usage 2</urn14:EventDetails></urn14:EventReason></urn13:Transaction></urn13:Acknowledgement></urn13:AcknowledgementMessage></urn:Payload></urn:MessageContainer></urn:ProcessMessageResponse></soapenv:Body></soapenv:Envelope>]]></con:value>
+            </con:property>
+            <con:property>
+              <con:name>OrgUser</con:name>
+              <con:value>${#Project#orgUserDSO_A}</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties>
+            <con:entry>ExternalMessageID*</con:entry>
+            <con:entry>Request</con:entry>
+            <con:entry>Response</con:entry>
+          </con:returnProperties>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Verify ACP.UPD.REQ [MIN] Response" id="73ec4b64-8f16-4957-ad83-8c2f3346cdd3">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>bb0a78e4-cf1f-4132-92a7-f3da6e4d66c0</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value>${Run ACP.UPD.REQ [MIN]#Response}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Count for (Tag/Entity Type/Part of XML)</con:name>
+              <con:value>Part of XML</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Parent Tag of Part of XML (Optional)</con:name>
+              <con:value/>
+            </con:property>
+            <con:property>
+              <con:name>Value for Count</con:name>
+              <con:value><![CDATA[<urn14:ReasonCode listAgencyIdentifier="NFI">BA02</urn14:ReasonCode> <urn14:EventReason> 	<urn14:EventReasonCode>RC.EYU.103</urn14:EventReasonCode> 	<urn14:EventReasonText>@@</urn14:EventReasonText> 	<urn14:EventDetails>Estimated Yearly Usage 1</urn14:EventDetails> 	<urn14:EventDetails>Estimated Yearly Usage 2</urn14:EventDetails> </urn14:EventReason>]]></con:value>
+            </con:property>
+            <con:property>
+              <con:name>Expecting Count</con:name>
+              <con:value>1</con:value>
+            </con:property>
+          </con:properties>
+          <con:returnProperties/>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+</con:soapui-project>

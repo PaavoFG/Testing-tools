@@ -6,16 +6,17 @@ import xml.etree.ElementTree as ET
 templates = {
             "Update customer information [DH-111-1]":"./xml_editors/step_data/DH-111-1.xml",
             "Create ACP [MIN] [DH-121]":"./xml_editors/step_data/DH-121.xml",
-            "Requesting ACP information":"./xml_editors/step_data/DH-131-1.xml",
-            "Current supplier requests customer information":"./xml_editors/step_data/DH-132-1.xml",
-            "DSO requests customer information":"./xml_editors/step_data/DH-134-1.xml",
-            "Third party requests customer information [MIN]":"./xml_editors/step_data/DH-135 [MIN].xml",
-            "Third party requests customer information [MAX]":"./xml_editors/step_data/DH-135 [MAX].xml",
-            "Create sales agreement":"./xml_editors/step_data/DH-311-1.xml",
-            "Confirm grid agreement":"./xml_editors/step_data/DH-312-1.xml",
-            "Give authorisation to a third party":"./xml_editors/step_data/DH-812.xml",
-            "New supplier requests customer and ACP information [MIN]":"./xml_editors/step_data/DH-133-1 [MIN].xml",
-            "New supplier requests customer and ACP information [MAX]":"./xml_editors/step_data/DH-133-1 [MAX].xml"
+            "Update ACP information [DH-122-1]":"./xml_editors/step_data/DH-122-1.xml",
+            "Requesting ACP information [DH-131]":"./xml_editors/step_data/DH-131-1.xml",
+            "Current supplier requests customer information [DH-132]":"./xml_editors/step_data/DH-132-1.xml",
+            "DSO requests customer information [DH-134]":"./xml_editors/step_data/DH-134-1.xml",
+            "Third party requests customer information [DH-135] [MIN]":"./xml_editors/step_data/DH-135 [MIN].xml",
+            "Third party requests customer information [DH-135] [MAX]":"./xml_editors/step_data/DH-135 [MAX].xml",
+            "Create sales agreement [DH-311]":"./xml_editors/step_data/DH-311-1.xml",
+            "Confirm grid agreement [DH-312]":"./xml_editors/step_data/DH-312-1.xml",
+            "Give authorisation to a third party [DH-812]":"./xml_editors/step_data/DH-812.xml",
+            "New supplier requests customer and ACP information [DH-133] [MIN]":"./xml_editors/step_data/DH-133-1 [MIN].xml",
+            "New supplier requests customer and ACP information [DH-133] [MAX]":"./xml_editors/step_data/DH-133-1 [MAX].xml"
             }
 
 
